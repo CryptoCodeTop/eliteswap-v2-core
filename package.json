@@ -1,18 +1,18 @@
 {
-  "name": "@eliteswap/v2-core",
+  "name": "@cryptocode99/v2-core",
   "description": "🎛 Core contracts for Elite Swap V2 protocol",
   "version": "1.0.5",
-  "homepage": "https://eliteswap.io",
+  "homepage": "https://cryptocode99.io",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EthereumEliteswap/eliteswap-v2-core.git"
+    "url": "git+https://github.com/cryptocode99/cryptocode99-v2-core.git"
   },
   "keywords": [
-    "eliteswap",
+    "cryptocode99",
     "ethereum",
     "v2",
     "core",
-    "eliteswap-v2"
+    "cryptocode99-v2"
   ],
   "files": [
     "contracts",
@@ -46,7 +46,7 @@
   },
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/EthereumEliteswap/eliteswap-v2-core/issues"
+    "url": "https://github.com/cryptocode99/cryptocode99-v2-core/issues"
   },
   "main": "index.js",
   "directories": {

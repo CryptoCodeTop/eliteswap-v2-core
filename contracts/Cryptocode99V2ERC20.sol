@@ -1,9 +1,9 @@
 pragma solidity =0.5.16;
 
-import './interfaces/IEliteswapV2ERC20.sol';
+import './interfaces/ICryptocode99V2ERC20.sol';
 import './libraries/SafeMath.sol';
 
-contract EliteswapV2ERC20 is IEliteswapV2ERC20 {
+contract Cryptocode99V2ERC20 is ICryptocode99V2ERC20 {
     using SafeMath for uint;
 
     string public constant name = 'Elite Swap V2';
@@ -79,7 +79,7 @@ contract EliteswapV2ERC20 is IEliteswapV2ERC20 {
     }
 
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
-        require(deadline >= block.timestamp, 'EliteswapV2: EXPIRED');
+        require(deadline >= block.timestamp, 'Cryptocode99V2: EXPIRED');
         bytes32 digest = keccak256(
             abi.encodePacked(
                 '\x19\x01',
@@ -88,7 +88,7 @@ contract EliteswapV2ERC20 is IEliteswapV2ERC20 {
             )
         );
         address recoveredAddress = ecrecover(digest, v, r, s);
-        require(recoveredAddress != address(0) && recoveredAddress == owner, 'EliteswapV2: INVALID_SIGNATURE');
+        require(recoveredAddress != address(0) && recoveredAddress == owner, 'Cryptocode99V2: INVALID_SIGNATURE');
         _approve(owner, spender, value);
     }
 }

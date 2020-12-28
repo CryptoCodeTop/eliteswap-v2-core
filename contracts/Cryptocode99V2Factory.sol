@@ -1,9 +1,9 @@
 pragma solidity =0.5.16;
 
-import './interfaces/IEliteswapV2Factory.sol';
-import './EliteswapV2Pair.sol';
+import './interfaces/ICryptocode99V2Factory.sol';
+import './Cryptocode99V2Pair.sol';
 
-contract EliteswapV2Factory is IEliteswapV2Factory {
+contract Cryptocode99V2Factory is ICryptocode99V2Factory {
     address public feeTo;
     address public feeToSetter;
 
@@ -21,16 +21,16 @@ contract EliteswapV2Factory is IEliteswapV2Factory {
     }
 
     function createPair(address tokenA, address tokenB) external returns (address pair) {
-        require(tokenA != tokenB, 'EliteswapV2: IDENTICAL_ADDRESSES');
+        require(tokenA != tokenB, 'Cryptocode99V2: IDENTICAL_ADDRESSES');
         (address token0, address token1) = tokenA < tokenB ? (tokenA, tokenB) : (tokenB, tokenA);
-        require(token0 != address(0), 'EliteswapV2: ZERO_ADDRESS');
-        require(getPair[token0][token1] == address(0), 'EliteswapV2: PAIR_EXISTS'); // single check is sufficient
-        bytes memory bytecode = type(EliteswapV2Pair).creationCode;
+        require(token0 != address(0), 'Cryptocode99V2: ZERO_ADDRESS');
+        require(getPair[token0][token1] == address(0), 'Cryptocode99V2: PAIR_EXISTS'); // single check is sufficient
+        bytes memory bytecode = type(Cryptocode99V2Pair).creationCode;
         bytes32 salt = keccak256(abi.encodePacked(token0, token1));
         assembly {
             pair := create2(0, add(bytecode, 32), mload(bytecode), salt)
         }
-        IEliteswapV2Pair(pair).initialize(token0, token1);
+        ICryptocode99V2Pair(pair).initialize(token0, token1);
         getPair[token0][token1] = pair;
         getPair[token1][token0] = pair; // populate mapping in the reverse direction
         allPairs.push(pair);
@@ -38,12 +38,12 @@ contract EliteswapV2Factory is IEliteswapV2Factory {
     }
 
     function setFeeTo(address _feeTo) external {
-        require(msg.sender == feeToSetter, 'EliteswapV2: FORBIDDEN');
+        require(msg.sender == feeToSetter, 'Cryptocode99V2: FORBIDDEN');
         feeTo = _feeTo;
     }
 
     function setFeeToSetter(address _feeToSetter) external {
-        require(msg.sender == feeToSetter, 'EliteswapV2: FORBIDDEN');
+        require(msg.sender == feeToSetter, 'Cryptocode99V2: FORBIDDEN');
         feeToSetter = _feeToSetter;
     }
 }

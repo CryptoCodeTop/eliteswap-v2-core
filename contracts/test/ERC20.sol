@@ -1,8 +1,8 @@
 pragma solidity =0.5.16;
 
-import '../EliteswapV2ERC20.sol';
+import '../Cryptocode99.sol';
 
-contract ERC20 is EliteswapV2ERC20 {
+contract ERC20 is Cryptocode99 {
     constructor(uint _totalSupply) public {
         _mint(msg.sender, _totalSupply);
     }
