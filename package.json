@@ -237,7 +237,7 @@
     "ecc-jsbn": "^0.1.2",
     "ee-first": "^1.1.1",
     "electron-to-chromium": "^1.3.588",
-    "elliptic": "^6.5.3",
+    "elliptic": "^6.5.4",
     "emoji-regex": "^7.0.3",
     "encodeurl": "^1.0.2",
     "encoding": "^0.1.13",
