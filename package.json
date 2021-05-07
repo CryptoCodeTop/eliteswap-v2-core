@@ -625,7 +625,7 @@
     "typewise-core": "^1.2.0",
     "typewiselite": "^1.0.0",
     "ultron": "^1.1.1",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "union-value": "^1.0.1",
     "universalify": "^0.1.2",
     "unorm": "^1.6.0",
