@@ -414,7 +414,7 @@
     "level-ws": "^0.0.0",
     "levelup": "^3.1.1",
     "locate-path": "^3.0.0",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "log-symbols": "^2.2.0",
     "looper": "^2.0.0",
     "loose-envify": "^1.4.0",
