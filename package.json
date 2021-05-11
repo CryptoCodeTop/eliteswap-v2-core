@@ -338,7 +338,7 @@
     "heap": "^0.2.6",
     "hmac-drbg": "^1.0.1",
     "home-or-tmp": "^2.0.0",
-    "hosted-git-info": "^2.8.8",
+    "hosted-git-info": "^2.8.9",
     "http-cache-semantics": "^4.1.0",
     "http-errors": "^1.7.2",
     "http-https": "^1.0.0",
