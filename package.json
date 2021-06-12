@@ -461,7 +461,7 @@
     "node-environment-flags": "^1.0.5",
     "node-fetch": "^2.6.1",
     "node-gyp-build": "^4.2.3",
-    "normalize-url": "^4.5.0",
+    "normalize-url": "^4.5.1",
     "number-to-bn": "^1.7.0",
     "oauth-sign": "^0.9.0",
     "object-assign": "^4.1.1",
