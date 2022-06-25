@@ -459,7 +459,7 @@
     "nice-try": "^1.0.5",
     "node-addon-api": "^2.0.2",
     "node-environment-flags": "^1.0.5",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "node-gyp-build": "^4.2.3",
     "normalize-url": "^4.5.0",
     "number-to-bn": "^1.7.0",
